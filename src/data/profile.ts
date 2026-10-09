@@ -71,6 +71,6 @@ export const profile: Profile = {
   socials: [
     { label: 'Facebook profile', href: 'https://www.facebook.com/rubyfunnelpro/', iconPath: '/icons/facebook.svg' },
     { label: 'LinkedIn profile', href: 'https://www.linkedin.com/in/rubyanneaguilar/', iconPath: '/icons/linkedin.svg' },
-    { label: 'Discord profile', href: '#', iconPath: '/icons/discord.svg' },
+    { label: 'Instagram profile', href: 'https://www.instagram.com/ruby_virtualassistant/', iconPath: '/icons/instagram.svg' },
   ],
 }
