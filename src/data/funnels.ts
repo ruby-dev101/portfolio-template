@@ -45,7 +45,15 @@ export const bookingFunnel: Funnel[] = [
   funnel('06', 'Booking'),
 ]
 
-export const websiteFunnel: Funnel[] = ['01', '02', '03', '04', '05', '06'].map(site)
+export const websiteFunnel: Funnel[] = [
+  {
+    file: 'indiewebsite.html',
+    label: 'Indie Book Festival',
+    tag: 'Website',
+    desc: 'A website design project for a book convention.',
+    dir: 'samples',
+  },
+]
 
 /**
  * Tag -> color map. Brand-external colors that identify the page type, passed
