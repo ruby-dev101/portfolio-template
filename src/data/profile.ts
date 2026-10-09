@@ -62,7 +62,7 @@ export const profile: Profile = {
   ],
   // The intro types this line, then flies it into the Home headline.
   // Keep it short: two halves, 5-8 words total.
-  displayName: { line1: 'Social Media & Websites', line2: 'That Help You Grow' },
+  displayName: { line1: 'Strategic Websites', line2: 'for Service Brands' },
   hero: {
     body: 'I design thoughtful, visually engaging websites that help business owners express their brand, connect with their audience, and show up confidently online.',
     portraitSrc: '/ruby.png',
