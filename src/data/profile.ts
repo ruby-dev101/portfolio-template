@@ -46,31 +46,31 @@ export type Profile = {
 }
 
 export const profile: Profile = {
-  name: 'Your Name',
-  firstName: 'Your Name',
-  handle: '@yourhandle',
-  role: 'PLACEHOLDER - your title',
-  avatarSrc: '/avatar.svg',
+  name: 'Ruby Anne Aguilar',
+  firstName: 'Ruby',
+  handle: '@ruby_virtualassistant',
+  role: 'Website Designer',
+  avatarSrc: '/ruby.png',
   verifiedLabel: 'PLACEHOLDER - what the tick means (e.g. a certification)',
-  email: 'you@example.com',
-  location: 'PLACEHOLDER - your city or timezone',
+  email: 'rubyanneaguilar@gmail.com',
+  location: 'Philippines',
   // Pick any icon from https://phosphoricons.com and import it above.
   stats: [
-    { value: '0 yrs', label: 'PLACEHOLDER', Icon: Briefcase },
+    { value: '5 yrs', label: 'Freelancer', Icon: Briefcase },
     { value: '#000', label: 'PLACEHOLDER', Icon: SealCheck },
     { value: 'GMT+0', label: 'PLACEHOLDER', Icon: Clock },
   ],
   // The intro types this line, then flies it into the Home headline.
   // Keep it short: two halves, 5-8 words total.
-  displayName: { line1: 'Your headline here.', line2: 'Keep it short.' },
+  displayName: { line1: 'Social Media & Websites', line2: 'That Help You Grow' },
   hero: {
-    body: 'PLACEHOLDER - one line on what you do and who you do it for.',
-    portraitSrc: '/avatar.svg',
-    portraitAlt: 'Portrait placeholder',
+    body: 'I design thoughtful, visually engaging websites that help business owners express their brand, connect with their audience, and show up confidently online.',
+    portraitSrc: '/ruby.png',
+    portraitAlt: 'Portrait of Ruby Anne Aguilar',
   },
   socials: [
-    { label: 'Facebook profile', href: '#', iconPath: '/icons/facebook.svg' },
-    { label: 'LinkedIn profile', href: '#', iconPath: '/icons/linkedin.svg' },
+    { label: 'Facebook profile', href: 'https://www.facebook.com/rubyfunnelpro/', iconPath: '/icons/facebook.svg' },
+    { label: 'LinkedIn profile', href: 'https://www.linkedin.com/in/rubyanneaguilar/', iconPath: '/icons/linkedin.svg' },
     { label: 'Discord profile', href: '#', iconPath: '/icons/discord.svg' },
   ],
 }
