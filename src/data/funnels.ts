@@ -25,14 +25,6 @@ const funnel = (n: string, tag: FunnelTag): Funnel => ({
   desc: 'PLACEHOLDER - tell me what to put here: who this page was for and what it does.',
 })
 
-const site = (n: string): Funnel => ({
-  file: `placeholder-site-${n}.html`,
-  label: `Placeholder Website ${n}`,
-  tag: 'Website',
-  desc: 'PLACEHOLDER - tell me what to put here: the client, the industry, and what the site had to do.',
-  dir: 'samples',
-})
-
 export const gymFunnel: Funnel[] = [
   funnel('01', 'Lead Capture'),
   funnel('02', 'Checkout'),
