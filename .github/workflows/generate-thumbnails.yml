@@ -1,0 +1,49 @@
+
+name: Generate portfolio thumbnails
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "public/funnels/**/*.html"
+      - "public/samples/**/*.html"
+      - "src/data/funnels.ts"
+      - "scripts/make-thumbs.mjs"
+
+permissions:
+  contents: write
+
+jobs:
+  thumbnails:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Generate thumbnails
+        run: node scripts/make-thumbs.mjs
+
+      - name: Save generated images
+        run: |
+          if git diff --quiet -- public/home public/placeholders public/funnels/thumbs public/samples/thumbs; then
+            echo "No generated images changed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/home public/placeholders public/funnels/thumbs public/samples/thumbs
+          git commit -m "Generate portfolio thumbnails"
+          git push
