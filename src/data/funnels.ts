@@ -30,6 +30,20 @@ export const websiteFunnel: Funnel[] = [
     desc: 'A website design project for a book convention.',
     dir: 'samples',
   },
+   {
+    file: 'fablewebsite.html',
+    label: 'Fable Book Convention',
+    tag: 'Website',
+    desc: 'A website design project for a book convention.',
+    dir: 'samples',
+  },
+   {
+    file: 'contractingwebsite.html',
+    label: 'Dietterich Contracting',
+    tag: 'Website',
+    desc: 'A website design project for a contractor.',
+    dir: 'samples',
+  },
 ]
 
 /**
