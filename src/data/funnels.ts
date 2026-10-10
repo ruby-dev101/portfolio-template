@@ -18,24 +18,9 @@ export type Funnel = {
  * `node scripts/make-thumbs.mjs` to render its thumbnails.
  */
 
-const funnel = (n: string, tag: FunnelTag): Funnel => ({
-  file: `placeholder-funnel-${n}.html`,
-  label: `Placeholder Funnel ${n}`,
-  tag,
-  desc: 'PLACEHOLDER - tell me what to put here: who this page was for and what it does.',
-})
+export const gymFunnel: Funnel[] = []
 
-export const gymFunnel: Funnel[] = [
-  funnel('01', 'Lead Capture'),
-  funnel('02', 'Checkout'),
-  funnel('03', 'Lead Capture'),
-]
-
-export const bookingFunnel: Funnel[] = [
-  funnel('04', 'Booking'),
-  funnel('05', 'Booking'),
-  funnel('06', 'Booking'),
-]
+export const bookingFunnel: Funnel[] = []
 
 export const websiteFunnel: Funnel[] = [
   {
